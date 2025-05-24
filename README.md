@@ -20,3 +20,30 @@ This repository contains a collection of web development projects completed duri
 
 ## 📂 Project Structure
 
+├── index.html <-- Main landing page linking to all tasks
+├── Task 1 Responsive Landing Page/
+├── Task 2 Stopwatch Web Application/
+├── Task 3 Tic-Tac-Toe Web Application/
+├── Task 4 Personal Portfolio/
+└── Task 5 Weather App/
+
+
+## 🔗 How to View the Projects
+
+To run/view the projects:
+
+- Visit the [GitHub Pages](#) link (replace with your actual GitHub Pages URL)
+- Use the homepage (`index.html`) to access each task individually
+
+> Example:  
+> [Task 1: Responsive Landing Page](#)  
+> [Task 2: Stopwatch Web Application](#)
+
+## 📸 Screenshots
+
+*(You can add screenshots of your projects here to make the README more visual.)*
+
+## 📬 Contact
+
+For questions or collaboration, feel free to contact me at:  
+📧 **abhijeetlahade109@gmail.com** 
