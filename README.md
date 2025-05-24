@@ -45,12 +45,12 @@ Contains files for the weather app
 
 To run/view the projects:
 
-- Visit the [GitHub Pages](#) link (replace with your actual GitHub Pages URL)
-- Use the homepage (`index.html`) to access each task individually
+- Visit the (https://abhijeet-109.github.io/Prodigy-InfoTech_Internship/)
+
 
 > Example:  
-> [Task 1: Responsive Landing Page](#)  
-> [Task 2: Stopwatch Web Application](#)
+> [Task 1: Responsive Landing Page](https://rb.gy/ckxwbd)  
+> [Task 2: Stopwatch Web Application](https://shorturl.at/lOr1c)
 
 
 ## 📬 Contact
