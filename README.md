@@ -19,13 +19,26 @@ This repository contains a collection of web development projects completed duri
 - JavaScript (Vanilla JS)
 
 ## 📂 Project Structure
+root/
 
-├── index.html <-- Main landing page linking to all tasks
-├── Task 1 Responsive Landing Page/
-├── Task 2 Stopwatch Web Application/
-├── Task 3 Tic-Tac-Toe Web Application/
-├── Task 4 Personal Portfolio/
-└── Task 5 Weather App/
+index.html
+Main landing page linking to all tasks
+
+Task 1 - Responsive Landing Page/
+Contains files for the responsive landing page project
+
+Task 2 - Stopwatch Web Application/
+Contains files for the stopwatch app
+
+Task 3 - Tic-Tac-Toe Web Application/
+Contains files for the Tic-Tac-Toe game
+
+Task 4 - Personal Portfolio/
+Contains files for the portfolio website
+
+Task 5 - Weather App/
+Contains files for the weather app
+
 
 
 ## 🔗 How to View the Projects
@@ -39,9 +52,6 @@ To run/view the projects:
 > [Task 1: Responsive Landing Page](#)  
 > [Task 2: Stopwatch Web Application](#)
 
-## 📸 Screenshots
-
-*(You can add screenshots of your projects here to make the README more visual.)*
 
 ## 📬 Contact
 
