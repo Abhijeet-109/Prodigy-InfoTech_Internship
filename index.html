@@ -1,32 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>My Projects</title>
   <style>
+    /* Reset & basics */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
     body {
-      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      color: #fff;
+    }
+
+    .container {
+      max-width: 900px;
+      width: 100%;
       text-align: center;
-      padding: 50px;
     }
+
     h1 {
-      font-size: 32px;
+      font-size: 3rem;
       margin-bottom: 40px;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     }
-    a {
-      display: block;
-      font-size: 20px;
-      margin: 20px;
-      color: #007bff;
+
+    .cards {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      width: 280px;
+      padding: 30px 20px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      color: #fff;
       text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      user-select: none;
     }
-    a:hover {
-      text-decoration: underline;
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    .card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      font-weight: 700;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .card p {
+      font-size: 1rem;
+      color: #ddd;
+      flex-grow: 1;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    .card span {
+      margin-top: 20px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: #e0e0e0;
+      letter-spacing: 0.05em;
+      transition: color 0.3s ease;
+    }
+
+    .card:hover span {
+      color: #ffdd57;
+    }
+
+    @media (max-width: 650px) {
+      .cards {
+        flex-direction: column;
+        gap: 20px;
+      }
+      .card {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to My Projects</h1>
-  <a href="Task%201%20Responsive%20Landing%20Page/">Task 1: Responsive Landing Page</a>
-  <a href="Task%202%20Stopwatch%20Web%20Application/">Task 2: Stopwatch Web Application</a>
+  <div class="container">
+    <h1>Welcome to My Projects</h1>
+    <div class="cards">
+      <a href="Task%201%20Responsive%20Landing%20Page/" class="card" tabindex="0">
+        <h2>Task 1</h2>
+        <p>Responsive Landing Page — a clean and modern design.</p>
+        <span>View Project →</span>
+      </a>
+      <a href="Task%202%20Stopwatch%20Web%20Application/" class="card" tabindex="0">
+        <h2>Task 2</h2>
+        <p>Stopwatch Web Application — a simple and functional timer.</p>
+        <span>View Project →</span>
+      </a>
+    </div>
+  </div>
 </body>
 </html>
