@@ -51,6 +51,7 @@ To run/view the projects:
 > Example:  
 > [Task 1: Responsive Landing Page](https://rb.gy/ckxwbd)  
 > [Task 2: Stopwatch Web Application](https://shorturl.at/lOr1c)
+> [Task 3: Tic-Tac-Toe Web Application](https://abhijeet-109.github.io/Prodigy-InfoTech_Internship/Task%203%20Tic-Tac-Toe%20(game)%20Web%20Application/)
 
 
 ## 📬 Contact
