@@ -9,8 +9,8 @@ This repository contains a collection of web development projects completed duri
 | Task 1   | Responsive Landing Page        | A modern, mobile-friendly landing page design.   |
 | Task 2   | Stopwatch Web Application      | A functional stopwatch with start, stop, and reset. |
 | Task 3   | Tic-Tac-Toe Web Application    | A classic 2-player game built with JavaScript.   |
-| Task 4   | Personal Portfolio             | A portfolio website showcasing my skills.        |
-| Task 5   | Weather App                    | An app to display real-time weather info.        |
+| Task 4   | Weather App                    | An app to display real-time weather info.        |
+| Task 5   | Personal Portfolio             | A portfolio website showcasing my skills.        |
 
 ## 🧩 Technologies Used
 
