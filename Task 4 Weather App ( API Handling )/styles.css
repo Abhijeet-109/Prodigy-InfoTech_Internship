@@ -1,0 +1,37 @@
+body{
+    margin: 0%;
+    padding: 0%;
+   
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+thead {
+background-color: white;
+  color: black;}
+
+tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.card{
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+      transform: translateY(-10px) scale(1.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 15px 30px rgba(23, 20, 20, 0.4);
+}
+

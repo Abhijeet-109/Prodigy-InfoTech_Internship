@@ -1,1 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/1163/1163763.png">
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <img src="https://cdn-icons-png.flaticon.com/512/1163/1163763.png" alt="Weather App" style="width: 25px;">
+
+            <a class="navbar-brand" href="#"> Weather App </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                   
+                </ul>
+                <form class="d-flex" role="search">
+                    <input id="cityInput" class="form-control me-2" type="search" placeholder="Search"
+                        aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit" id="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" >
+        <h1 class="my-4 text-center">Weather For <span id="cityName"></span></h1>
+        <main>
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center" >
+                <div class="col" >
+                    <div class="card mb-4 rounded-3 shadow-sm" >
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Temperature <img
+                                    src="   https://cdn-icons-png.flaticon.com/512/14788/14788309.png "
+                                    style="width: 40px;"> </h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">
+                                <span id="temperature2"></span><small class="text-body-secondary fw-light"><span>
+                                        &#8451;</span></small>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Temparature is <span id="temperature"></span></li>
+                                <li>Visibility <span id="visibility"></span></li>
+                                <li>Condition <span id="text"></span></li>
+
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Humidity Info <img
+                                    src="   https://cdn-icons-png.flaticon.com/512/481/481453.png "
+                                    style="width: 40px;"></h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">
+                                <span id="humidity2"></span><small class="text-body-secondary fw-light"> %</small>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Humidity <span id="humidity"></span></li>
+                                <li>Sunrise <span id="sunrise"></span></li>
+                                <li>Sunset <span id="sunset"></span></li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3 ">
+                            <h4 class="my-0 fw-normal">Wind Status <img
+                                    src="   https://cdn-icons-png.flaticon.com/512/13638/13638567.png"
+                                    style="width: 40px;"></h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">
+                                <span id="speed2"></span><small class="text-body-secondary fw-light"> mph</span></small>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <!-- <li>Chill <span id="chill"></span></li> -->
+                                <li>Speed <span id="speed"></span></li>
+                                <li>Pressure <span id="pressure"></span></li>
+                                <li>Direction <span id="direction"></span></li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="display-6 text-center mb-4">Other Common Region</h2>
+            <div class="table-responsive">
+
+                <table border="1" cellspacing="0" cellpadding="8"
+                    style="border-collapse: collapse; width: 100%; text-align: center;">
+                    <thead style="background-color: #dfdfdf;">
+                        <tr >
+                            <th class="my-0 fw-normal">City</th>
+                            <th class="my-0 fw-normal">Temperature</th>
+                            <th class="my-0 fw-normal">Humidity</th>
+                            <th class="my-0 fw-normal">Pressure</th>
+                            <th class="my-0 fw-normal">Visibility</th>
+                            <th class="my-0 fw-normal">Sunrise</th>
+                            <th class="my-0 fw-normal">Sunset</th>
+                            <th class="my-0 fw-normal">Direction</th>
+                            <th class="my-0 fw-normal">Speed</th>
+                        </tr>
+                    </thead>
+                    <tbody id="staticData">
+
+                        <td colspan="9">Loading weather data...</td>
+                    </tbody>
+
+
+
+
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
